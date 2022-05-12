@@ -1,3 +1,7 @@
-@extends('layouts.base');
-@section('title','Titolo')
-    
+@extends('layouts.base')
+
+
+@section('main-content')
+
+<h1>film</h1>
+@endsection
