@@ -2,19 +2,19 @@
 
 
 @section('main-content')
-@foreach ($movies as $movie)
-    
-
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h1 class="card-title">Titolo Film: {{$movie['title']}}</h1>
-      <h2 class="card-subtitle mb-2 text-muted">Titolo originale : {{$movie['original_title']}}</h2>
-      <h3 class="card-text">data: {{$movie['date']}}</h3>
-
+<div class="container-fluid">
+  <div class="row">
+    @foreach ($movies as $movie)
+    <div class="col-3 ">
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; min-height:10rem">
+          <div class="card-header">Titolo Film: {{$movie['title']}}</div>
+          <div class="card-body">
+            <h5 class="card-title">Titolo originale : {{$movie['original_title']}}</h5>
+            <p class="card-text">data: {{$movie['date']}}</p>
+          </div>
+        </div>
+      </div>
+      @endforeach
     </div>
-  </div>
-@endforeach
-{{-- <h1 class="text-danger">
-    @dump($movies)
-</h1> --}}
+    </div>
 @endsection
