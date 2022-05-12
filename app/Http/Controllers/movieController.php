@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Movie;
 use Illuminate\Http\Request;
 
 class movieController extends Controller
@@ -9,12 +10,16 @@ class movieController extends Controller
     //
     public function index()
     {
-
-        return view('movies.index');
+        $movie = Movie::all();
+        $data = [
+            "movie" => new Movie(),
+            "movies" => $movie,
+        ];
+        return view('movies.index', $data);
     }
     //
-    public function show()
+    /*     public function show()
     {
         return view('movies.show');
-    }
+    } */
 }

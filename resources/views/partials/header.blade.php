@@ -1,3 +1,3 @@
 <header>
-    <h1>header</h1>
+    <h1 class="text-center">header</h1>
 </header>

@@ -1,4 +1,4 @@
-@extends('layouts.base')
+{{-- @extends('layouts.base')
 @section('title','Titolo')
 
 
@@ -7,4 +7,4 @@
     
 <h1>film</h1>
 @endsection
-</main>
+</main> --}}
